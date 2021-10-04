@@ -2,7 +2,7 @@
 // action can contain action type and potential payload
 // reducer typically use switch statements
 
-const reducer = (state, action) => {
+const reducer = (state = 0, action) => {
     switch (action.type) {
         case "deposit":
             return state + action.payload;
